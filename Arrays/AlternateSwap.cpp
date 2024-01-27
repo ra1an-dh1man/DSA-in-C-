@@ -11,6 +11,17 @@ void swapArray(int arr[], int n)
         if(i+1 < n)
         {
             swap(arr[i], arr[i+1]);
+          /*
+          ---------how swap working----------
+          ------------------------------------
+              for(int i = 0 ; i < n ; i=i+2)
+              {
+                  int temp = arr[i];
+                  arr[i] = arr[i+1];
+                  arr[i+1] = temp;
+              }
+          ------------------------------------    
+          */ 
         }
     }
 }
