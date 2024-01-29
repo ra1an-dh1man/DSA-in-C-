@@ -9,7 +9,7 @@ int BinarySearch(int arr[], int n, int key)
     int start = 0;
     int end = n - 1;
 
-    int mid = (start + end) / 2;
+    int mid = start + (end - start) / 2;
 
     while(start <= end)
     {
@@ -22,7 +22,7 @@ int BinarySearch(int arr[], int n, int key)
         else if(key < arr[mid])
             end = mid - 1;
 
-        mid = (start + end) / 2;
+        mid = start + (end - start) / 2;
 
     }
     return -1;
